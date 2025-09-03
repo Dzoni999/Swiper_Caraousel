@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.collection {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e232e, #0d1117);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.naslov {
+    color: #0099ff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collection .content {
+    position: relative; /* za overlay teksta */
+    height: 28rem;
+    width: 25rem;
+    background-color: #1b1f2a;
+    border: 0.2rem solid rgba(255,255,255,0.1);
+    border-radius: 0.7rem;
+    border-bottom: 0.4rem solid #0099ff;
+    border-top: 0.4rem solid #0099ff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection .content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+}
+
+.text-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+}
+
+.text-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.text-content p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: #0099ff;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid #0099ff;
+    outline: none;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007acc;
+    border-color: #007acc;
+}
+
+@media (max-width: 768px) {
+    .collection .content {
+        width: 90%;
+        height: auto;
+    }
+    .text-content p {
+        max-width: 90%;
+        font-size: 0.85rem;
+    }
+    .naslov {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
