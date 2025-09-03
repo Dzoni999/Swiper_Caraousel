@@ -5,12 +5,6 @@ The project demonstrates a modern slider design with overlay text, hover effects
 
 ---
 
-## Demo
-
-![Screenshot](screenshot.png)  
-*(Add a screenshot of your slider in the repository and link it here)*
-
----
 
 ## Technologies Used
 
